@@ -6,8 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Button
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
+
+    private var mAuth: FirebaseAuth? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -28,9 +31,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         val letsStartButton: Button = findViewById(R.id.angry_btn)
+        mAuth = FirebaseAuth.getInstance()
 
         letsStartButton.setOnClickListener{
-            startActivity(Intent(this, Cadastro::class.java))
+            if(mAuth?.currentUser != null){
+                startActivity(Intent(this, Home::class.java))
+            }else{
+                startActivity(Intent(this, Cadastro::class.java))
+            }
+
         }
     }
 }
