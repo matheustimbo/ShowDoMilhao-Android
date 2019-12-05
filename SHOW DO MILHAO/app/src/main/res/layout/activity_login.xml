@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".Login">
 
     <TextView
@@ -11,7 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,7 +36,11 @@
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:hint="email "
+        android:textColor="#F44336"
+        android:textColorHint="#FF0000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -41,8 +50,12 @@
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:hint="senha "
         android:inputType="textPassword"
+        android:textColor="#F44336"
+        android:textColorHint="#F44336"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +66,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Email "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/emailTextInput"
         app:layout_constraintStart_toStartOf="@+id/emailTextInput" />
 
@@ -62,39 +79,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Senha "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/senhaTextInput"
-        app:layout_constraintStart_toStartOf="@+id/senhaTextInput"
-        />
+        app:layout_constraintStart_toStartOf="@+id/senhaTextInput" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="132dp"
+        android:backgroundTint="#C0281B"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Login "
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/senhaTextInput" />
 
     <Button
         android:id="@+id/cadastroButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#C0281B"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Ir para o cadastro  "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
     <ProgressBar
         android:id="@+id/loadingIndicator"
         style="?android:attr/progressBarStyle"
         android:layout_width="41dp"
         android:layout_height="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/senhaTextInput" />

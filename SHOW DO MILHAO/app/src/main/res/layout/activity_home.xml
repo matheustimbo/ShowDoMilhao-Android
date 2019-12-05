@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".Home">
 
     <TextView
@@ -11,37 +12,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Carregando..."
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/rankingBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
         android:layout_marginTop="44dp"
+        android:backgroundTint="#C0281B"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Ranking"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/helloUserLabel" />
 
     <Button
         android:id="@+id/quizBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#C0281B"
         android:text="Iniciar Quiz"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rankingBtn" />
 
     <Button
         android:id="@+id/logoutBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
         android:layout_marginBottom="68dp"
+        android:backgroundTint="#C0281B"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -51,7 +68,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="46dp"
+        android:backgroundTint="#C0281B"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Button"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/quizBtn"
         tools:layout_editor_absoluteX="157dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
