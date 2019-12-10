@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".Home">
+    tools:context=".activity.HomeActivity">
 
     <TextView
         android:id="@+id/helloUserLabel"
@@ -25,28 +25,29 @@
         android:id="@+id/rankingBtn"
         android:layout_width="256dp"
         android:layout_height="51dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#C0281B"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Ranking"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/helloUserLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/quizBtn" />
 
     <Button
         android:id="@+id/quizBtn"
         android:layout_width="256dp"
         android:layout_height="51dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#C0281B"
         android:text="Iniciar Quiz"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rankingBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/helloUserLabel" />
 
     <Button
         android:id="@+id/logoutBtn"
@@ -63,16 +64,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/teste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
-        android:backgroundTint="#C0281B"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Button"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/quizBtn"
-        tools:layout_editor_absoluteX="157dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

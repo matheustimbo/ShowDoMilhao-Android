@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".Cadastro">
+    tools:context=".activity.CadastroActivity">
 
     <TextView
         android:id="@+id/cadastroTitle"
@@ -23,6 +23,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputNome"
+        android:maxLines="1"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -40,6 +41,7 @@
         android:id="@+id/textInputEmail"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
+        android:maxLines="1"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:hint="Email"
@@ -55,6 +57,7 @@
         android:id="@+id/textInputSenha"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
+        android:maxLines="1"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:hint="Senha"
@@ -116,7 +119,7 @@
         android:id="@+id/btnCadastrar"
         android:layout_width="256dp"
         android:layout_height="51dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#C0281B"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Cadastrar"
@@ -142,6 +145,7 @@
         android:id="@+id/loginButton"
         android:layout_width="256dp"
         android:layout_height="51dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="48dp"
         android:backgroundTint="#C0281B"
         android:fontFamily="sans-serif-condensed-medium"
@@ -151,5 +155,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
