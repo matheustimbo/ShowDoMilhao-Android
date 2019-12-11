@@ -61,6 +61,10 @@ class QuizActivity : AppCompatActivity() {
             preencherPergunta()
         } else {
 
+            if (perguntas[index].Resposta == indexResposta && index == 15) {
+                index++
+            }
+
             Firebase.database.getReference("users").child(Firebase.auth.currentUser!!.uid).addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(p0: DataSnapshot) {
                     p0.getValue(User::class.java)?.let {
@@ -73,13 +77,14 @@ class QuizActivity : AppCompatActivity() {
                             child("bestShot").setValue(max)
                         }
                     }
-                    startActivity(Intent(this@QuizActivity, RankingActivity::class.java))
-                    finish()
                 }
 
                 override fun onCancelled(p0: DatabaseError) {
                 }
             })
+
+            startActivity(Intent(this@QuizActivity, RankingActivity::class.java))
+            finish()
         }
     }
 
